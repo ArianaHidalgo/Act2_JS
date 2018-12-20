@@ -7,11 +7,28 @@ Tip: Investigar el evento window.onload
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+<div>	
+	<img src="../img/suga2.png" alt="">
+	<img src="../img/suga3.jpg" alt="">
+	<img src="../img/suga6.png" alt="">
+</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script>
+		$(function(){
+			alert("Despues de la carga del DOM")
+		})
+        window.onload = function(){
+    	alert("window load")
+    };
+     
 
-  </body>
+		
+		
+	</script>
+</body>
 </html>
